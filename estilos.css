@@ -1,11 +1,5 @@
 /* CSS DOCUMENT */
 @charset "utf-8"; 
-
-@font-face {
-    font-family: "warpaint";
-    src: url(tipos/warpaint/Warpaint.ttf);
-}
-
 @font-face {
     font-family: "genesize";
     src: url(tipos/genesize-grotesk/GenesizeGroteskDemo.otf);
@@ -28,40 +22,41 @@ p{
     text-align: center;
 }
 
-h2{
-    font-family:"inter", sans-serif;
-    font-size: 30px;
-    color: rgb(255, 55, 140);
-    text-align: center;
-}
-
 .texto p{
-    font-family: "inter", sans-serif;
+    font-family: "courier", sans-serif;
     font-size: 18px;
     color: rgb(255, 55, 140);
     text-align: left;
 }
 
-#hero, .botones{
-    margin: 10,10,10;
+#hero {
+    background-image: url(imagenes/hero.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 80vh;
+    padding: 30px;
 }
 
-.titulo{
-    font-family: "genesize", sans-serif;
-    font-size: 450px;
+#hero h3{
+    font-family: 'Courier New', Courier, monospace;
     text-align: center;
-    color: rgb(255, 55, 140);
-
-}
-
-h1, h2{
-    line-height: 0cm;
-}
-
-h3{
-    font-family: "genesize", sans-serif;
+    color: rgb(255, 240, 211);
     font-size: 40px;
-    color: rgb(255, 55, 140);
-    text-align: left;
 }
 
+#hero p{
+    font-family: "genesize", sans-serif;
+    text-align: center;
+    font-size: 450px;
+}
+
+#hero p, h3{
+    color: rgb(255, 240, 211);
+    margin: 0px;
+    line-height: 150px;
+}
+
+.texto{
+    margin: 30px;
+    line-height: 27px;
+}

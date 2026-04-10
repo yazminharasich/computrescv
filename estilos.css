@@ -6,14 +6,27 @@
 }
 
 .botones a {
-    font-family: "inter", sans-serif;
-    color: rgb(255, 240, 211);
+    font-family: 'Courier New', Courier, monospace;
+    color: rgb(0, 0, 0);
     font-size: small;
     text-decoration: none;
-    text-align: center;
+    text-align: left;
+    padding: 15px;
+    margin-bottom: 2px;
 }
 
-body{ background-color: black;}
+.botones{
+    background-color: rgb(255, 240, 211);
+    background-size: cover;
+    background-position: center;
+    height: 1vh;
+    padding: 15px;
+    margin: 5 0 0 0px;
+}
+
+body{ background-color: black;
+    box-sizing: border-box;
+}
 
 p{
     font-family: "genesize", sans-serif;
@@ -23,7 +36,7 @@ p{
 }
 
 .texto p{
-    font-family: "courier", sans-serif;
+    font-family: 'Courier New', Courier, monospace;
     font-size: 18px;
     color: rgb(255, 55, 140);
     text-align: left;
@@ -42,21 +55,34 @@ p{
     text-align: center;
     color: rgb(255, 240, 211);
     font-size: 40px;
+    margin-top: 150px;
 }
 
 #hero p{
     font-family: "genesize", sans-serif;
     text-align: center;
     font-size: 450px;
+    margin-bottom: 0px;
 }
 
 #hero p, h3{
     color: rgb(255, 240, 211);
-    margin: 0px;
-    line-height: 150px;
+    margin: 4 0 0 0px;
+    line-height: 0px;
 }
 
 .texto{
     margin: 30px;
     line-height: 27px;
 }
+
+h3{
+    font-family:'Courier New', Courier, monospace;
+    margin: 30px;
+    line-height: 27px;
+}
+
+.habilidades img{
+    padding: 80px;
+}
+

@@ -5,84 +5,216 @@
     src: url(tipos/genesize-grotesk/GenesizeGroteskDemo.otf);
 }
 
-.botones a {
+nav a {
     font-family: 'Courier New', Courier, monospace;
-    color: rgb(0, 0, 0);
-    font-size: small;
+    color: rgb(255, 240, 211);
     text-decoration: none;
-    text-align: left;
-    padding: 15px;
-    margin-bottom: 2px;
+    padding: 30px;
+    display: inline;
 }
 
-.botones{
-    background-color: rgb(255, 240, 211);
-    background-size: cover;
-    background-position: center;
-    height: 1vh;
-    padding: 15px;
-    margin: 5 0 0 0px;
+header {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    background-color: rgb(0, 0, 0);
+    flex-wrap: wrap; 
 }
 
-body{ background-color: black;
-    box-sizing: border-box;
+.contenedor {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100vw;
+    max-width: 1200px;
+    flex-direction: initial;
 }
 
-p{
+body{
+    background-color: rgb(2, 1, 0);
+    margin: 0%;
+    margin-top: 0%;
+}
+
+h1{
     font-family: "genesize", sans-serif;
     font-size: 450px;
     color: rgb(255, 55, 140);
     text-align: center;
 }
 
-.texto p{
-    font-family: 'Courier New', Courier, monospace;
-    font-size: 18px;
-    color: rgb(255, 55, 140);
-    text-align: left;
+h3{
+    font-family:'Courier New', Courier, monospace;
+    margin: 10px; 
 }
 
 #hero {
     background-image: url(imagenes/hero.jpg);
     background-size: cover;
     background-position: center;
-    height: 80vh;
-    padding: 30px;
+    height: 80vh; 
+    background-repeat: no-repeat;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
 }
 
 #hero h3{
     font-family: 'Courier New', Courier, monospace;
-    text-align: center;
     color: rgb(255, 240, 211);
     font-size: 40px;
-    margin-top: 150px;
+    font-weight: 400;   
 }
 
-#hero p{
+#hero h1{
     font-family: "genesize", sans-serif;
-    text-align: center;
+    font-weight: 500;
     font-size: 450px;
-    margin-bottom: 0px;
-}
-
-#hero p, h3{
+    margin: 135px;
     color: rgb(255, 240, 211);
-    margin: 4 0 0 0px;
-    line-height: 0px;
 }
 
-.texto{
-    margin: 30px;
-    line-height: 27px;
+#hero h1, h3{
+    
+    color: rgb(255, 240, 211);
+    line-height: 0;
 }
 
-h3{
-    font-family:'Courier New', Courier, monospace;
-    margin: 30px;
-    line-height: 27px;
+h2 {
+    font-family: "genesize", sans-serif;
+    font-weight: 400;
+    color:  rgb(255, 55, 140);
+    font-size: 48px;
 }
 
 .habilidades img{
     padding: 80px;
 }
 
+#sobre-mi {
+    display: flex;
+    background-color:  rgb(255, 240, 211);
+    min-height: 80vh;
+}
+
+#sobre-mi article {
+    display: flex;
+    align-items: flex-start;
+    margin: 40px 0px 60px 80px;
+    gap: 50px;
+
+}
+
+.perfil {
+    width: 650px;
+    height: auto;
+    display: flex;
+    margin: 30px;
+}
+
+.descripcion{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.descripcion p{
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 18px;
+    color: rgb(255, 55, 140);
+    text-align: justify;
+    font-weight: 600;
+    line-height: 25px;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    max-width: 900px;
+}
+
+.descripcion h2{
+    margin: 0;
+    text-align: start;
+}
+
+
+.img-habilidad {
+  width: 910px;
+  height: auto;
+}
+
+#trabajos{
+    display: flex;
+    background-color: rgb(255, 55, 140);
+    min-height: 80vh;
+}
+
+#trabajos article{
+    display: flex;
+    align-items: flex-start;
+    margin: 40px 0px 60px 80px;
+    gap: 50px;
+}
+
+.mis-trabajos{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+
+}
+
+.mis-trabajos h2{
+    font-family: "genesize", sans-serif;
+    font-weight: 400;
+    color:  rgb(255, 240, 211);
+    font-size: 48px;
+    margin: 0;
+    text-align: start;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.mis-trabajos p{
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 18px;
+    color: rgb(255, 240, 211);
+    text-align: justify;
+    font-weight: 600;
+    line-height: 25px;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    max-width: 900px;
+}
+
+.ejemplos{
+    display: flex;
+    gap: 50px;
+    margin: 20px 20px 0px 20px;
+}
+
+.img-ejemplos {
+    width: 300px;
+    height: auto;
+    box-shadow: 0px 10px 25px rgba(0, 0, 0, 0.2);
+}
+
+.footer{
+    display: flex;
+    background-color: rgb(15, 2, 8);
+    min-height: 30vh;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+}
+
+.info{
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 16px;
+    color: rgb(255, 55, 140);
+}
